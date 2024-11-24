@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Caprasimo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@200;300&family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,900;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html, body {
+    height: 100%;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    margin: 0; /* Elimina los márgenes predeterminados */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: hsl(210, 46%, 95%);
+    overflow: auto;
+}
+
+.container {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 75%;
+    height: 80%;
+    gap: 1.5rem;
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+    
+}
+
+
+.daniel .comillas {
+    position: absolute; /* Permite usar propiedades como right */
+    right: 5rem; /* Coloca el elemento a la derecha dentro del contenedor */
+    top: 0rem; /* Ajusta la posición vertical */
+    z-index: 0;
+    
+}
+
+.daniel{
+    position: relative; 
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    background-color: hsl(263, 55%, 52%);
+    
+}
+
+.jhonatan{
+    grid-column: 3;
+    grid-row: 1;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.Jeanette{
+    grid-column: 1;
+    grid-row: 2;
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+.Patrick{
+    grid-column: 2 / span 2;
+    grid-row: 2;
+    background-color: hsl(219, 29%, 14%);
+}
+
+.Kira{
+    grid-column: 4;
+    grid-row: 1 / span 2;
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+.daniel, .Jeanette, .jhonatan, .Patrick, .Kira{
+    padding: 2rem;
+    border-radius: 10px;
+    -webkit-box-shadow: 16px 18px 20px -9px rgba(0,0,0,0.19);
+    -moz-box-shadow: 16px 18px 20px -9px rgba(0,0,0,0.19);
+    box-shadow: 16px 18px 20px -9px rgba(0,0,0,0.19);
+
+}
+
+.perfil {
+    float: left; /* Coloca la imagen a la izquierda */
+    margin-right: 1rem; /* Añade espacio entre la imagen y el contenido */
+    height: 2rem;
+    border-radius: 100%;
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: column; /* Mantiene nombre y subtítulo en columna */
+    justify-content: center; /* Centra el texto verticalmente */
+    align-items: flex-start; /* Alinea el texto a la izquierda */
+    padding-bottom: 1rem;
+}
+
+.nombre{
+    font-size: 1rem;
+    margin: 0; /* Elimina márgenes del título */
+    font-weight: 400;
+    
+}
+
+.subtitulo{
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+.nombre, .subtitulo{
+    display: flex;
+    flex-direction: column;
+}
+
+.primer-parrafo{
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+    font-weight: 500;
+    z-index: 2;
+    position: relative;
+}
+
+.segundo-parrafo{
+    font-size: 0.8rem;
+}
+
+.daniel, .jhonatan, .Patrick{
+    color: white;
+}
+.daniel .segundo-parrafo, .jhonatan .segundo-parrafo, .Patrick .segundo-parrafo{
+    
+    line-height: 1.5;
+    color: hsl(0, 0%, 81%);
+}
+
+.Jeanette .segundo-parrafo, .Kira .segundo-parrafo{
+    line-height: 1.5;
+    color: hsl(217, 19%, 35%);
+}
+
+@media screen and (max-width: 768px) {
+
+    html, body {
+        display: flex; /* Cambia de flex a block */
+        height: auto; /* Permite que el contenido crezca naturalmente */
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: auto; 
+        padding-top: 2rem;
+        
+    }
+
+    
+}
