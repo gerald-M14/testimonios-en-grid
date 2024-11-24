@@ -30,8 +30,8 @@ Los usuarios deberían poder:
 
 ### Enlaces
 
-- URL de la solución: [Repositorio de la solución](#)  
-- URL del sitio en vivo: [Demostración en vivo](#)  
+- URL de la solución: [Repositorio de la solución](https://github.com/gerald-M14/testimonios-en-grid-reto)  
+- URL del sitio en vivo: [Demostración en vivo](https://gerald-m14.github.io/testimonios-en-grid-reto/)  
 - Autora: [Mi linkedin](https://www.linkedin.com/in/geraldhy-m-492528294/)  
 - mi perfil en frontend mentor: [Mi perfil en frontend mentor](https://www.frontendmentor.io/profile/gerald-M14)  
 ---
